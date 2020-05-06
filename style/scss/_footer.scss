@@ -1,0 +1,230 @@
+.footer{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #232637;
+    p{
+        font-family: $font1 !important;
+    }
+    .footer_top{
+        padding-top: 120px;
+        padding-bottom: 110px;
+        @media #{$mobile_device} {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        .footer_widget{
+            @media #{$mobile_device} {
+                margin-bottom: 30px;
+            }
+            @media #{$tablet_device} {
+                margin-bottom: 30px;
+            }
+            .footer_title{
+                font-size: 26px;
+                font-weight: 500;
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 25px;
+                font-family: $font1;
+                @media #{$mobile_device} {
+                    margin-bottom: 20px;
+                }
+            }
+            .footer_logo{
+                font-size: 22px;
+                font-weight: 400;
+                color: #040E27;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                @media #{$mobile_device} {
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+
+                color: #7A838B;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                a{
+                    color: #7A838B;
+                    &:hover{
+                        color: #040E27;
+                    }
+                }
+            
+            }
+            p.footer_text{
+                font-size: 16px;
+                color: #B2B2B2;
+                margin-bottom: 23px;
+                font-weight: 400;
+                line-height: 28px;
+                a.domain{
+                    color: #B2B2B2;
+                    font-weight: 400;
+                    &:hover{
+                        color: #040E27;
+                        border-bottom: 1px solid #040E27
+                    }
+                }
+                &.doanar{
+                    a{
+                    font-weight: 500;
+                    color: #B2B2B2;
+                    
+                    &:hover{
+                        color: #040E27;
+                        border-bottom: 1px solid #040E27
+                    }
+                    &.first{
+                        margin-bottom: 10px;
+                    }
+                    }
+
+                }
+            }
+            ul{
+                li{
+                    color: #8891a1;
+                    font-size: 16px;
+                    line-height: 40px;
+                    a{
+                        color: #7A838B;
+                        font-weight: 300;
+                        font-family: $font1;
+                        &:hover{
+                            color: $btn-bg;
+                        }
+                    }
+                }
+            }
+            .newsletter_form{
+                position: relative;
+                margin-bottom: 20px;
+                input{
+                    width: 100%;
+                    height: 60px;
+                    background: transparent;
+                    padding-left: 20px;
+                    font-size: 15px;
+                    color: #000;
+                    border: none;
+                    background: #fff;
+                    border-radius: 0px;
+                    font-family: $font1;
+                    &::placeholder{
+                        font-size: 14px;
+                        color: #aeb4ba;
+                        font-weight: 300;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 60px;
+                    border: none;
+                    font-size: 16px;
+                    color: #fff;
+                    background: #ebb830;
+                    padding: 10px;
+                    padding: 0 30px;
+                    cursor: pointer;
+                    top: 0px;
+                    right: 0px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $font1;
+                    @media #{$mobile_device} {
+                        position: relative;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+            .newsletter_text{
+                font-size: 13px;
+                color: #7A838B;
+                line-height: 26px;
+            }
+        }
+    }
+    .copy-right_text{
+        padding-bottom: 60px;
+        .copy_right{
+            font-size: 15px;
+            color: #7A838B;
+            margin-bottom: 0;
+            font-weight: 500;
+            @media #{$mobile_device} {
+                font-size: 13px;
+            }
+            a{
+                color: #1fc2d9;
+            }
+        }
+    }
+    .newsLetter_wrap{
+        margin-bottom: 76px;
+        .footer_widget{
+            .footer_title{
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .footer_border{
+        border-top: 1px solid #353b56;
+        padding-bottom: 60px;
+    }
+    .socail_links{
+        ul{
+            li{
+                display: inline-block;
+                @include transition(.3s);
+                margin-right: 5px;
+                @media #{$mobile_device} {
+                    margin-right: 0;
+                }
+                a{
+                    font-size: 15px;
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    text-align: center;
+                    background: #3b5998;
+                    line-height: 60px !important;
+                    margin-right: 7px;
+                    color: #fff !important;
+                    line-height: 60px !important;
+                    color: #fff !important;
+                    @include transition(.3s);
+                    i{
+                        font-size: 20px;
+                        position: relative;
+                    }
+                 
+                }
+                &:nth-child(2) a{
+                    background: #1da1f2;
+                }
+                &:nth-child(3) a{
+                    background: #dd4b39;
+                }
+                &:nth-child(4) a{
+                    background: #0077b5;
+                }
+                &:hover a{
+                    color: #fff !important;
+                    background: $btn-bg !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+html,
+body {
+	direction: rtl;
+}
+.courses_box-img {
+	padding-left: 30px;
+	padding-right: 0;
+}
+.courses-link-wrap {
+	left: 15px;
+	right: 0;
+}
+.course-link {
+	margin-left: 30px;
+	margin-right: 0;
+}
+.courses_box-img a span {
+	padding-left: 10px;
+	padding-right: 0;
+}
+.course-link span:after {
+	right: 100%;
+	margin-right: 0;
+}
+
+.chart-img img {
+	padding-left: 16px;
+	padding-right: 0;
+	float: right;
+}
+@media (max-width: 992px) {
+	.chart-img img {
+		float: none;
+	}
+}
+
+.event-img_date {
+	right: 48px;
+	left: 75%;
+}
+.event-img_title h3 {
+	padding-right: 48px;
+}
+.event-img_title h3:after {
+	right: 48px;
+}
+.date-description h3:after {
+	right: 0;
+}
+.event_date {
+	float: right;
+}
+.date-description {
+	margin-right: 115px;
+	margin-left: 0;
+}
+.address ul li {
+	float: right;
+}
+
+
+
+/*About*/
+.our-teachers-block .teachers-description {
+	margin-right: 45%;
+	margin-left: 0;
+	padding: 20px 20px 15px 85px;
+}
+.social-icons {
+	left: 0;
+	right: 91%;   
+	border-right: 1px solid #ececec;
+}
+@media (max-width: 992px) {
+	.our-teachers-block .teachers-description {
+		margin-right: 0;
+		padding: 20px 20px 73px 85px;
+	}
+	.social-icons {
+		right: 0;
+	}
+}
+
+
+
+/*Academic*/
+.couse-desc-wrap {
+	margin-right: 45%;
+	margin-left: 0;
+}
+.course_duration {
+	margin-left: 0;
+	margin-right: 45%;
+}
+.course_duration ul li {
+	margin-right: 20px;
+	margin-left: 0;
+}
+@media (max-width: 992px) {
+	.couse-desc-wrap {
+		margin-right: 0;
+	}
+	.course_duration {
+		margin-right: 0;
+	}
+}
+
+
+
+/*Admission Form*/
+select.form-control.custom-select {
+	margin-right: 0;
+}
+
+/*Blog*/
+.blog-category_block ul li a i {
+	float: left;
+	transform:rotate(180deg);
+}
+.blog-date {
+	right: 0;	
+	left: 85%;	
+}
+.blog-img_block img {
+	padding-right: 40px;
+	padding-left: 0;
+}
+.blog-tiltle_block {
+	padding: 30px 100px 0 0;
+}
+.blogpost-quotes span i {
+	transform: rotate(180deg);
+}
+.quote-right  {
+	float: left;
+}
+.quote-right i {
+	transform: rotate(180deg);
+}
+.blog-tiltle_block h6 a:first-child {
+	padding-left: 0;
+	padding-right: 0;
+}
+.blog-tiltle_block p {
+	padding: 22px 0 0 16px;
+}
+.blog-icons .blog-share_block {
+	text-align: left;
+}
+
+
+
+/*Contact*/
+.contact-details i {
+	float: right;
+}
+
+
+
+/*course-detail*/
+.admission_discription p {
+	text-align: right;
+}
+.btn-pdf_join {
+	left: -60px;
+	right: 67%;
+}
+.admission-pdf p {
+	text-align: right;
+}
+
+
+
+/*Shortcodes*/
+.alert-info i,
+.alert-success i,
+.alert-danger i,
+.alert-warning i {
+	margin-left: 24px;
+	margin-right: 0;
+}
+button.accordion {
+	text-align: right;
+}
+button.accordion:after {
+	float: left;
+}
+
+/*Index 2*/
+.header-top_login, 
+.header-top_login2 {
+	float: left;
+}
+
+/*Landing Page*/
+.landing-title h3:after,
+.speech h2:after,
+.teacher-profile_block h4:after {
+	right: 0;
+}
+
+.teacher-profile_block ul li span {
+	padding: 0 0 0 8px;
+}
+
+/*Gallery*/
+.gallery-header-center-right-links {
+	float: right;
+}
+
+/*Dropdown Sub menu*/
+.dropdown-submenu > .dropdown-menu {
+	right: 100%;
+	margin-top: -6px;
+}
+.dropdown-submenu > a:after {
+	float: left;
+	transform:rotate(180deg);
+}
+
+/*News Letter*/
+.signup_form {
+	background-position: 95% 19px;
+}

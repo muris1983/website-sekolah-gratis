@@ -1,0 +1,91 @@
+.popular_program_area{
+    // single__programstart__start 
+    .single__program{
+        margin-bottom: 100px;
+        @media #{$mobile_device} {
+            margin-bottom: 50px;
+        }
+        .program_thumb{
+            img{
+                width: 100%;
+            }
+        }
+        .program__content{
+            background: #f8fafe;
+            padding: 55px 40px 60px 40px;
+            position: relative;
+            &::before{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+                background-image: url(../img/program/shape.png);
+                content: '';
+                z-index: 1;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            @media #{$mobile_device} {
+                margin-bottom: 30px;
+            }
+            span{
+                display: block;
+                font-size: 16px;
+                color: #232637;
+                font-weight: 400;
+            }
+            h4{
+                font-size: 25px;
+                color: #232637;
+                font-family: $font2;
+                font-weight: 400;
+                margin-top: 23px;
+            }
+            p{
+                color: #7d84ab;
+                font-size: 16px;
+                line-height: 28px;
+                margin-top: 23px;
+                margin-bottom: 35px;
+            }
+            a{
+
+            }
+        }
+    }
+    // single__programstart__end
+
+    .nav{
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        background: #f8fafe;
+        margin-bottom: 80px;
+        @include border-radius(3px);
+        margin-top: 33px;
+        @media #{$mobile_device} {
+            margin-bottom: 40px;
+        }
+        a{
+            font-size: 16px;
+            color: #234262;
+            font-weight: 400;
+            display: inline-block;
+            padding: 8px 22px;
+            @media #{$mobile_device} {
+                padding: 8px 16px;
+            }
+            &.active{
+                background: #60d3e4;
+                color: #fff;
+                @include border-radius(3px);
+            }
+        }
+    }
+    &.program__page{
+        .single__program{
+            margin-bottom: 30px;
+        }
+    }
+}

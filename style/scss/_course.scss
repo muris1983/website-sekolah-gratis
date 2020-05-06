@@ -1,0 +1,223 @@
+.latest_coures_area{
+    position: relative;
+    padding: 140px 0;
+    z-index: 0;
+    @media #{$mobile_device} {
+        padding: 60px 0;
+    }
+    &::before{
+        position: absolute;
+        background-image: url(../img/causes/1.png);
+        left: 0;
+        content: '';
+        width: 60%;
+        top: 0;
+        bottom: 0;
+        z-index:-2 ;
+        background-size: cover;
+        background-position: center center;
+        @media #{$mobile_device}{
+            width: 100%;
+        }
+        @media #{$tablet_device}{
+            width: 100%;
+        }
+        @media #{$mid_device}{
+            width: 100%;
+        }
+    }
+    &::after{
+        position: absolute;
+        background: #000;
+        left: 0;
+        content: '';
+        width: 60%;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: rgba(23, 47, 72,0.871);
+        @media #{$mobile_device}{
+            width: 100%;
+        }
+        @media #{$tablet_device}{
+            width: 100%;
+        }
+        @media #{$mid_device}{
+            width: 100%;
+        }
+    }
+    .latest_coures_inner{
+        &::before{
+            position: absolute;
+            right: 0;
+            width: 40%;
+            top: 0;
+            bottom: 0;
+            content: '';
+            background-size: cover;
+            background-position: center center;
+            background-image: url(../img/causes/2.png);
+            @media #{$mobile_device} {
+                display: none !important ;
+            }
+            @media #{$tablet_device}{
+                display: none;
+            }
+            @media #{$mid_device}{
+                display: none;
+            }
+        }
+    }
+    .section_title{
+        p{
+           
+            margin-top: 30px;
+            margin-bottom: 63px;
+            br{
+                @media #{$mobile_device} {
+                    display: none;
+                }
+                @media #{$mid_device} {
+                    display: none;
+                }
+            }
+        }
+    }
+    .coures_info{
+        .coures_wrap{
+            @media #{$mobile_device} {
+                display: block !important ;
+            }
+            .single_wrap{
+                @media #{$mobile_device} {
+                    margin-bottom: 30px;
+                }
+            }
+            .icon{
+                background: #fff;
+                width: 70px;
+                height: 70px;
+                @include border-radius(50%);
+                text-align: center;
+                line-height: 70px;
+                display: inline-block;
+                
+                i{
+                    line-height: 70px;
+                    font-size: 30px;
+                    position: relative;
+                    left: 4px;
+                    color: #357ed7;
+                }
+            }
+            h4{
+                font-size: 25px;
+                line-height: 1.4;
+                color: #fff;
+                font-family: $font2;
+                margin-top: 22px;
+            }
+            p{
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 57px;
+                margin-top: 27px;
+            }
+            a{
+
+            }
+        }
+    }
+}
+
+.admission_area{
+    position: relative;
+    padding: 110px 0;
+    z-index: 0;
+    &::before{
+        position: absolute;
+        background-image: url(../img/admission/1.png);
+        right: 0;
+        content: '';
+        width: 60%;
+        top: 0;
+        bottom: 0;
+        z-index:-2 ;
+        background-size: cover;
+        background-position: center center;
+        @media #{$mobile_device}{
+            width: 100%;
+        }
+        @media #{$tablet_device}{
+            width: 100%;
+        }
+    }
+    &::after{
+        position: absolute;
+       background: #000;
+        right: 0;
+        content: '';
+        width: 60%;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: rgba(23, 47, 72,0.871);
+        @media #{$mobile_device}{
+            width: 100%;
+        }
+        @media #{$tablet_device}{
+            width: 100%;
+        }
+    }
+    .admission_inner{
+        &::before{
+            position: absolute;
+            left: 0;
+            width: 40%;
+            top: 0;
+            bottom: 0;
+            content: '';
+            background-size: cover;
+            background-position: center center;
+            background-image: url(../img/admission/2.png);
+            @media #{$mobile_device}{
+                display: none;
+            }
+            @media #{$tablet_device}{
+                display: none;
+            }
+        }
+    }
+    .admission_form{
+        h3{
+            font-family: $font2;
+            color: #fff;
+            font-size: 55px;
+            margin-bottom: 40px;
+        }
+        .single_input{
+            input,textarea{
+                width: 100%;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 300;
+                background: transparent ;
+                border: 0;
+                border-bottom: 1px solid #7b7e8d;
+                padding-bottom: 15px;
+                margin-bottom: 40px;
+                &::placeholder{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            textarea{
+                height: 110px;
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.recent_event_area{
+    .single_event{
+        border: 1px solid #e0e0e0;
+        @include border-radius(10px);
+        overflow: hidden;
+        margin-bottom: 30px;
+        @media #{$mobile_device} {
+            display: block !important;
+        }
+        .date{
+            background: #317bd6;
+            padding: 45px 70px;
+            @media #{$tablet_device}{
+                padding: 33px 23px;
+            }
+            span{
+                font-size: 58px;
+                font-family: $font2;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 7px;
+                display: block;
+            }
+            p{
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 0;
+                font-weight: 400;
+                line-height: 1;
+            }
+        }
+        .event_info{
+            padding-left: 60px;
+            @media #{$mobile_device}{
+                padding: 15px;
+            }
+            @media #{$tablet_device}{
+                padding: 25px;
+            }
+            h4{
+                font-size: 30px;
+                font-family: $font2;
+                color: #234262;
+                margin-bottom: 15px;
+                @media #{$mobile_device}{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                @media #{$tablet_device}{
+                    font-size: 25px;
+                }
+            }
+            p{
+                color: #7d84ab;
+                font-size: 16px;
+                span{
+                    margin-right: 44px;
+                    @media #{$mobile_device} {
+                        margin-right: 20px;
+                    }
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .single_event:nth-child(2) .date{
+        background: #1fc2d9;
+    }
+    .single_event:nth-child(2) .date{
+        background: #ebb830;
+    }
+}
+
+
+.event_details_area{
+    .single_event{
+        @include border-radius(10px);
+        overflow: hidden;
+        margin-bottom: 90px;
+        @media #{$mobile_device} {
+            display: block !important;
+        }
+        @media #{$tablet_device} {
+            display: block !important;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .thumb{
+            position: relative;
+            img{
+               width: 458px; 
+               @include border-radius(10px);
+               @media #{$mobile_device}{
+                   width: 100%;
+               }
+            }
+            .date{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: #317bd6;
+                padding: 25px 35px;
+                h4{
+                    font-size: 40px;
+                    color: #fff;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    line-height: 1;
+                    font-family: $font2;
+                }
+                span{
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+        .event_details_info{
+            padding-left: 30px;
+            @media #{$mobile_device}{
+                padding-left: 0;
+            }
+            @media #{$tablet_device}{
+                padding-left: 0;
+            }
+            .event_info{
+                @media #{$mobile_device}{
+                    padding: 15px;
+                }
+                @media #{$tablet_device}{
+                    padding: 25px 0 0 0;
+                }
+                h4{
+                    font-size: 30px;
+                    font-family: $font2;
+                    color: #234262;
+                    margin-bottom: 15px;
+                    @media #{$mobile_device}{
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    @media #{$tablet_device}{
+                        font-size: 25px;
+                    }
+                }
+                p{
+                    color: #7d84ab;
+                    font-size: 16px;
+                    border-bottom: 1px solid #eaeaea;
+                    margin-bottom: 52px;
+                    padding-bottom: 31px;
+                    @media #{$mobile_device}{
+                        margin-bottom: 30px;
+                        padding-bottom: 20px;
+                    }
+                    @media #{$tablet_device}{
+                        margin-bottom: 30px;
+                        padding-bottom: 20px;
+                    }
+                    span{
+                        margin-right: 44px;
+                        @media #{$mobile_device} {
+                            margin-right: 20px;
+                        }
+                        i{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .event_info_text{
+                margin-bottom: 54px;
+                @media #{$mobile_device}{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+

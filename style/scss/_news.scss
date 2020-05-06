@@ -1,0 +1,96 @@
+.recent_news_area{
+    .single__news{
+        margin-bottom: 30px;
+        .thumb{
+            overflow: hidden;
+            position: relative;
+            @include border-radius(10px 10px 0 0 );
+          img{
+            width: 100%;
+            @include transform(scale(1));
+            transition: .3s;
+            }  
+            .badge{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: #ebb830;
+                padding: 12px 40px;
+                display: inline-block;
+                z-index: 9;
+                font-size: 13px;
+                font-weight: 400;
+                color: #fff;
+                &.bandge_2{
+                    background: #317bd6;
+                }
+            }
+        }
+        .news_info{
+            border: 1px solid #f2f3f4;
+            padding: 41px 50px 46px 50px;
+            @include border-radius(0 0 10px 10px);
+            border-top: 0;
+            @media #{$mobile_device} {
+                padding: 20px;
+            }
+            @media #{$tablet_device} {
+                padding: 30px;
+            }
+            h4{
+                font-size: 25px;
+                line-height: 1.4;
+                font-family: $font2;
+                color: #234262;
+                margin-bottom: 31px;
+                @media #{$mobile_device}{
+                    font-size: 20px;
+                }
+            }
+            p{
+                margin-bottom: 0;
+                @media #{$mobile_device}{
+                    display: block !important;
+                }
+                span{
+                    color: #7d84ab;
+                    font-size: 14px;
+                    display: inline-block;
+                    i{
+                        margin-right: 5px;
+                    }
+                    &:last-child{
+                        padding-left: 20px;
+                        margin-left: 20px;
+                        position: relative;
+                        @media #{$mobile_device}{
+                            padding-left: 9px;
+                            margin-left: 9px;
+                        }
+                        &::before{
+                            position: absolute;
+                            height: 14px;
+                            width: 1px;
+                            background: #7d84ab;
+                            content: '';
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+               
+            }
+        }
+        &:hover{
+            .thumb{
+              img{
+                @include transform(scale(1.1));
+                }  
+            }
+        }
+    }
+}
+
+  
+  

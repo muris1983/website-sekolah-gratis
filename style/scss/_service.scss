@@ -1,0 +1,64 @@
+.service_area{
+    padding-top: 85px;
+    padding-bottom: 50px;
+    .single_service{
+        background: #ebb830;
+         @include border-radius(10px);
+         padding: 27.5px 30px;
+         margin-bottom: 30px;
+         @media #{$mobile_device} {
+            padding: 20px 20px;
+         }
+         @media #{$mid_device} {
+            padding: 20px 20px;
+         }
+        .icon{
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            background: #fff;
+            @include border-radius(50%);
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 20px;
+            i{
+                color: #ebb830;
+            }
+        }
+        .service_info{
+            h4{
+                font-family: $font1;
+                font-weight: 500;
+                color: #fff;
+                font-size: 25px;
+                margin-bottom: 7px;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 400;
+                color: #fff;
+                line-height: 1;
+            }
+        }
+    }
+    .col-lg-4:nth-child(2) .single_service{
+        background: #317bd6;
+        .icon{
+            i{
+                color: #317bd6;
+            }
+        }
+    }
+    .col-lg-4:nth-child(3) .single_service{
+        background: #1fc2d9;
+        .icon{
+            i{
+                color: #1fc2d9;
+            }
+        }
+    }
+}
+
+  

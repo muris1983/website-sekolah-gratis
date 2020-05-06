@@ -1,0 +1,42 @@
+.breadcam_bg{
+    background-image: url(../img/banner/bradcam.png);
+}
+
+.bradcam_area{
+    padding: 170px;
+    background-size: cover;
+    background-position: center center;
+    padding: 171px 0px;
+    background-repeat: no-repeat;
+    @media #{$mobile_device} {
+        padding: 120px 0;
+    }
+    h3{
+        font-size: 50px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-family: $font2;
+        text-transform: capitalize;
+        @media #{$mobile_device} {
+            font-size: 30px;
+        }
+    }
+    p{
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: capitalize;
+        a{
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }

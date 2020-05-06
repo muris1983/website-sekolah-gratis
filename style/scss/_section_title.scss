@@ -1,0 +1,41 @@
+.section_title{
+    h3{
+        font-size: 55px;
+        font-weight: 400;
+        font-family: $font2;
+        color: $heading-color;
+        @media #{$mobile_device} {
+            font-size: 30px;
+        }
+    }
+    P{
+        font-size: 18px;
+        line-height: 2;
+        color: #7d84ab;
+        margin-bottom: 0;
+    }
+    &.white_text{
+        h3,p{
+            color: #fff;
+        }
+    }
+}
+.mb-100{
+    margin-bottom: 100px;
+    @media #{$mobile_device} {
+        margin-bottom: 40px;
+    }
+}
+.mb-70{
+    margin-bottom: 69px;
+    @media #{$mobile_device} {
+        margin-bottom: 40px;
+    }
+}
+
+.mb-45{
+    margin-bottom: 45px;
+    @media #{$mobile_device}{
+        margin-bottom: 30px;
+    }
+}
